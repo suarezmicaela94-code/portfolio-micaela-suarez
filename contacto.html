@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto de Micaela Suárez, diseñadora y comunicadora visual.">
+    <title>Contacto | Micaela Suárez</title>
+    
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="logo-mobile" aria-label="Ir al inicio">✿ ✿ ✿</a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú">☰</label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html#proyectos">PROYECTOS</a></li>
+                <li><a href="index.html#sobre-mi">SOBRE MÍ</a></li>
+                <li><a href="index.html#experiencia">EXPERIENCIA</a></li>
+                <li><a href="contacto.html" class="activo">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-contacto">
+
+        <section class="contacto" id="contacto">
+
+            <div class="contacto-contenido">
+
+                <h1>
+                    ¿Creamos algo
+                    <span>juntos?</span>
+                </h1>
+
+                <p>
+                    Si tenés una idea, un proyecto o simplemente
+                    querés charlar sobre diseño, ¡escribime!
+                </p>
+
+                <!-- FORMULARIO -->
+                <form class="form-contacto">
+
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text"
+                           id="nombre"
+                           name="nombre"
+                           placeholder="Nombre y Apellido"
+                           required>
+
+                    <label for="email">Correo electrónico</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Correo electrónico"
+                           required>
+
+                    <label for="asunto">Asunto</label>
+                    <input type="text"
+                           id="asunto"
+                           name="asunto"
+                           placeholder="¿Por qué querés que nos veamos?"
+                           required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje"
+                              name="mensaje"
+                              rows="5"
+                              placeholder="Contame tu idea..."
+                              required></textarea>
+
+                    <button type="submit" class="btn-primary">
+                        ENVIAR MENSAJE →
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- COLLAGE DECORATIVO -->
+            <div class="contacto-imagen">
+                <img src="img/collage-contacto.png" collage creativo con elementos de diseño" class="imagen-contacto"
+                    DISPONIBLE PARA NUEVAS IDEAS ♥
+                </span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FRANJA DECORATIVA -->
+    <aside class="franja-servicios">
+        <p>
+            IDENTIDAD ✱ GRÁFICA ✱ PACKAGING ✱ REDES ✱
+            ILUSTRACIÓN ✱ SUBLIMACIÓN ✱ DISEÑO ✱
+        </p>
+    </aside>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p class="footer-titulo">¿Hacemos algo lindo?</p>
+        <p>Las buenas ideas empiezan con un hola.</p>
+        <p>Cátedra Wischñevsky · Segundo Cuatrimestre 2026</p>
+        <p>© 2026 Micaela Suárez · Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
