@@ -34,6 +34,12 @@ body {
     color: var(--negro);
 }
 
+h1 {
+    font-family: "fredoka";
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: bold;
+}
 a {
     text-decoration: none;
     color: inherit;
