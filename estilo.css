@@ -1,5 +1,3 @@
-
-
 /* ====================================
    PORTFOLIO MICAELA SUÁREZ
    COMPUTACIÓN III - UNLa 2026
@@ -29,7 +27,7 @@ html {
 
 body {
     font-family: Montserrat;
-    
+
     background-color: var(--crema);
     color: var(--negro);
 }
@@ -40,6 +38,15 @@ h1 {
     font-style: normal;
     font-weight: bold;
 }
+
+h3 {
+    font-family: "fredoka";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #F56BAA;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -56,12 +63,13 @@ img {
 
 /* HEADER CENTRADO */
 
-.header {
+header {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 38px 20px 0;
+
 }
 
 /* RECTÁNGULO DEL MENÚ */
@@ -86,8 +94,8 @@ img {
     align-items: center;
     gap: 25px;
     margin: 0;
-    padding: 0;
-    list-style: none;
+    padding: 15px 26px;
+    border: 2px solid #211E20;
 }
 
 .navbar {
@@ -126,7 +134,7 @@ img {
    HERO / PRESENTACIÓN
 ==================================== */
 
-.hero {
+.presentacion {
     min-height: 680px;
     max-width: 1600px;
     margin: auto;
@@ -184,7 +192,7 @@ img {
     font-size: 15px;
     cursor: pointer;
     transition: transform 0.25s ease,
-                background-color 0.25s ease;
+        background-color 0.25s ease;
 }
 
 .btn-primary:hover {
@@ -286,7 +294,7 @@ img {
     color: var(--rosa);
 }
 
-.contacto-contenido > p {
+.contacto-contenido>p {
     font-size: 20px;
     max-width: 550px;
     line-height: 1.5;
@@ -376,10 +384,13 @@ img {
     letter-spacing: 1px;
 }
 
-.footer {
+footer {
     background: var(--naranja);
     text-align: center;
-    padding: 45px 20px 30px;
+    padding: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .footer-titulo {
@@ -401,6 +412,11 @@ img {
 
 .footer-redes a:hover {
     text-decoration: underline;
+}
+
+.legales {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* ====================================
@@ -435,12 +451,49 @@ img {
 }
 
 /* ====================================
+   PROYECTOS
+==================================== */
+
+.intro-proyectos {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.botones {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+
+    li {
+        border-color: black;
+        border-style: solid;
+        border-radius: 15px;
+        padding: 10px;
+        font-weight: 600;
+    }
+
+}
+
+.lista-producción {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.producción {
+    
+}
+
+
+
+/* ====================================
    RESPONSIVE - MOBILE
 ==================================== */
 
 @media (max-width: 600px) {
 
-    .header {
+    header {
         padding: 20px 25px;
     }
 
@@ -488,7 +541,7 @@ img {
         gap: 20px;
     }
 
-    .menu-toggle:checked ~ .nav-links {
+    .menu-toggle:checked~.nav-links {
         display: flex;
     }
 
@@ -599,7 +652,7 @@ img {
         font-size: clamp(42px, 11vw, 65px);
     }
 
-    .contacto-contenido > p {
+    .contacto-contenido>p {
         font-size: 15px;
     }
 
@@ -621,70 +674,71 @@ img {
         padding: 35px 20px;
         font-size: 12px;
     }
+
     /* ==============================
    REPRODUCTOR DE JAZZ
 ================================ */
 
-.reproductor-jazz {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 230px;
-  max-width: 100%;
-  padding: 8px 10px;
-  margin-top: 22px;
-  background-color: #F8D8C4;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
+    .reproductor-jazz {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 230px;
+        max-width: 100%;
+        padding: 8px 10px;
+        margin-top: 22px;
+        background-color: #F8D8C4;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
 
-.jazz-icono {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #FF7417;
-  color: white;
-  font-size: 19px;
-}
+    .jazz-icono {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #FF7417;
+        color: white;
+        font-size: 19px;
+    }
 
-.jazz-contenido {
-  flex: 1;
-  min-width: 0;
-}
+    .jazz-contenido {
+        flex: 1;
+        min-width: 0;
+    }
 
-.jazz-titulo {
-  color: #FF7417;
-  font-size: 12px;
-  font-weight: 700;
-  margin: 0;
-}
+    .jazz-titulo {
+        color: #FF7417;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0;
+    }
 
-.jazz-subtitulo {
-  color: #333;
-  font-size: 9px;
-  margin: 1px 0 4px;
-}
+    .jazz-subtitulo {
+        color: #333;
+        font-size: 9px;
+        margin: 1px 0 4px;
+    }
 
-/* AUDIO COMPACTO */
+    /* AUDIO COMPACTO */
 
-.reproductor-jazz audio {
-  display: block;
-  width: 100%;
-  height: 28px;
-  margin: 0;
-}
+    .reproductor-jazz audio {
+        display: block;
+        width: 100%;
+        height: 28px;
+        margin: 0;
+    }
 
-/* MOBILE */
+    /* MOBILE */
 
-@media (max-width: 500px) {
-  .reproductor-jazz {
-    width: 220px;
-    margin-top: 18px;
-  }
-}
+    @media (max-width: 500px) {
+        .reproductor-jazz {
+            width: 220px;
+            margin-top: 18px;
+        }
+    }
 
 }
