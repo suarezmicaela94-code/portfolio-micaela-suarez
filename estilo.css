@@ -454,10 +454,19 @@ footer {
    PROYECTOS
 ==================================== */
 
+.principal-proyectos {
+    margin: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .intro-proyectos {
     display: flex;
     gap: 20px;
     flex-direction: column;
+    max-width: 50%;
+    align-items: last baseline;
 }
 
 .botones {
@@ -475,16 +484,38 @@ footer {
 
 }
 
-.lista-producción {
+.lista-proyectos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.proyecto-izquierda {
     display: flex;
     flex-direction: column;
+    gap: 25px;
 
 }
 
-.producción {
+.proyecto-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 
+    img {
+        border-radius: 25px;
+    }
 }
 
+.produccion {
+    background-color: var(--naranja);
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
 
 
 /* ====================================
@@ -592,7 +623,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    .hero-texto > p {
+    .hero-texto>p {
         font-family: 'Montserrat', sans-serif;
         font-size: 13px;
         line-height: 1.7;
@@ -680,7 +711,7 @@ footer {
         margin: 30px 15px 15px;
     }
 
-    footer > p:not(.footer-titulo) {
+    footer>p:not(.footer-titulo) {
         font-size: 13px;
         line-height: 1.6;
         padding: 0 20px;
@@ -715,7 +746,9 @@ footer {
         margin-bottom: 8px;
     }
 
-}@media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
 
     header {
         padding: 20px 25px;
