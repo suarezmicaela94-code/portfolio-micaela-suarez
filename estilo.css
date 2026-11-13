@@ -41,7 +41,7 @@ h1 {
 
 h3 {
     font-family: "fredoka";
-    font-size: 4rem;
+    font-size: 5rem;
     font-style: normal;
     font-weight: bold;
     color: #F56BAA;
@@ -282,14 +282,15 @@ header {
     width: 55%;
 }
 
-.contacto h1 {
+h3 {
     font-size: clamp(50px, 6vw, 100px);
     line-height: 0.95;
     letter-spacing: -3px;
     margin-bottom: 25px;
+    color: #211E20;
 }
 
-.contacto h1 span {
+h3 span {
     display: block;
     color: var(--rosa);
 }
@@ -515,6 +516,12 @@ footer {
     flex-direction: column;
     gap: 15px;
 
+        opacity: 0.55;
+    transition: opacity 0.3s ease-out;
+}
+
+.produccion:hover {
+    opacity: 1;
 }
 
 

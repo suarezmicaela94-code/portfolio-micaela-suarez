@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
 </head>
 
@@ -20,19 +21,14 @@
 
     <!-- ENCABEZADO -->
     <header class="header">
-        <nav class="navbar" aria-label="Navegación principal">
-            <a href="index.html" class="logo-mobile" aria-label="Ir al inicio">✿ ✿ ✿</a>
+        <nav class="nav-links">
+            <img src="img/logo-decorativo-1.svg" alt="logo-decorativo-1" height="20" width="20">
+            <a href="index.html">INICIO</a>
+            <a href="proyectos.html">PROYECTOS</a>
+            <a href="index.html#sobre-mi">SOBRE MÍ</a>
+            <a href="index.html#experiencia">EXPERIENCIA</a>
+            <a href="contacto.html" class="activo">CONTACTO</a>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-hamburguesa" aria-label="Abrir menú">☰</label>
-
-            <ul class="nav-links">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="index.html#proyectos">PROYECTOS</a></li>
-                <li><a href="index.html#sobre-mi">SOBRE MÍ</a></li>
-                <li><a href="index.html#experiencia">EXPERIENCIA</a></li>
-                <li><a href="contacto.html" class="activo">CONTACTO</a></li>
-            </ul>
         </nav>
     </header>
 
@@ -43,10 +39,10 @@
 
             <div class="contacto-contenido">
 
-                <h1>
+                <h3>
                     ¿Creamos algo
                     <span>juntos?</span>
-                </h1>
+                </h3>
 
                 <p>
                     Si tenés una idea, un proyecto o simplemente
@@ -86,20 +82,26 @@
 
     </main>
 
-    <!-- FRANJA DECORATIVA -->
-    <aside class="franja-servicios">
-        <p>
-            IDENTIDAD ✱ GRÁFICA ✱ PACKAGING ✱ REDES ✱
-            ILUSTRACIÓN ✱ SUBLIMACIÓN ✱ DISEÑO ✱
-        </p>
-    </aside>
 
     <!-- PIE DE PÁGINA -->
-    <footer class="footer">
+    <footer>
+        <!-- FRANJA DECORATIVA -->
+        <aside class="franja-servicios">
+            <p>
+                IDENTIDAD ✱ GRÁFICA ✱ PACKAGING ✱ REDES ✱
+                ILUSTRACIÓN ✱ SUBLIMACIÓN ✱ DISEÑO ✱
+            </p>
+        </aside>
         <p class="footer-titulo">¿Hacemos algo lindo?</p>
         <p>Las buenas ideas empiezan con un hola.</p>
-        <p>Cátedra Wischñevsky · Segundo Cuatrimestre 2026</p>
-        <p>© 2026 Micaela Suárez · Todos los derechos reservados</p>
+
+        <div class="footer-redes">
+            <a href="contacto.html">CONTACTAME →</a>
+        </div>
+        <div class="legales">
+            <p>Cátedra Wischñevsky · Segundo Cuatrimestre 2026</p>
+            <p>© 2026 Micaela Suárez · Todos los derechos reservados</p>
+        </div>
     </footer>
 
 </body>

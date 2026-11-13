@@ -1,5 +1,0 @@
-FIGMA:
-https://www.figma.com/design/53sXG5fqS6mJIgBUnU77JD/cv-suarez-micaela?node-id=66-463&t=q90d8vH8NavedEsn-1
-
-GitHub:
-https://github.com/suarezmicaela94-code/portfolio-micaela-suarez/deployments/github-pages
