@@ -482,7 +482,7 @@ footer {
 }
 
 .producción {
-    
+
 }
 
 
@@ -491,7 +491,231 @@ footer {
    RESPONSIVE - MOBILE
 ==================================== */
 
-@media (max-width: 600px) {
+/* ==================================
+   RESPONSIVE MOBILE - HASTA 500 PX
+================================== */
+
+@media screen and (max-width: 500px) {
+
+    /* CONFIGURACIÓN GENERAL */
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ENCABEZADO */
+
+    .header {
+        width: 100%;
+        padding: 15px 12px;
+        height: auto;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-links img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+
+    main {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* PRESENTACIÓN */
+
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+        padding: 35px 0;
+    }
+
+    /* TEXTOS */
+
+    .hero-texto {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-texto h1 {
+        font-family: 'Fredoka', sans-serif;
+        font-size: 36px;
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+
+    .hero-texto h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .hero-texto > p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    /* BOTÓN */
+
+    .btn-primary {
+        display: inline-block;
+        max-width: 100%;
+        padding: 12px 22px;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* REPRODUCTOR DE JAZZ */
+
+    .reproductor-jazz {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .reproductor-jazz p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .reproductor-jazz audio {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* IMAGEN DE PERFIL */
+
+    .hero-imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .foto-perfil {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+        padding: 0 0 25px;
+        text-align: center;
+    }
+
+    /* FRANJA DE SERVICIOS */
+
+    .franja-servicios {
+        width: 100%;
+        padding: 12px 15px;
+        overflow: hidden;
+    }
+
+    .franja-servicios p {
+        font-size: 10px;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+    }
+
+    /* TÍTULO DEL FOOTER */
+
+    .footer-titulo {
+        font-family: 'Fredoka', sans-serif;
+        font-size: 30px;
+        line-height: 1.2;
+        margin: 30px 15px 15px;
+    }
+
+    footer > p:not(.footer-titulo) {
+        font-size: 13px;
+        line-height: 1.6;
+        padding: 0 20px;
+    }
+
+    /* CONTACTO */
+
+    .footer-redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+        padding: 0 20px;
+    }
+
+    .footer-redes a {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* LEGALES */
+
+    .legales {
+        width: 100%;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .legales p {
+        font-size: 10px;
+        line-height: 1.6;
+        margin-bottom: 8px;
+    }
+
+}@media (max-width: 600px) {
 
     header {
         padding: 20px 25px;
